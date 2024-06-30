@@ -96,16 +96,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    paddingVertical: 24,
+    paddingVertical: 36,
     paddingTop: 36
   },
   subContainer: {
-    paddingHorizontal: 20,
+    paddingHorizontal: 18,
     backgroundColor: "white",
     borderRadius: 10,
     flex: 1,
     width: "100%",
-    paddingVertical: 78,
+    paddingVertical: 48,
     flexDirection: "column",
     gap: 18,
     justifyContent: "space-between"
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: "row",
-    gap: 5,
+    gap: 20,
     width: "100%",
   },
   avatar: {
@@ -133,9 +133,11 @@ const styles = StyleSheet.create({
   text: {
     color: '#9CAFAA',
     fontSize: 16,
-    fontWeight: 'bold',
-    marginVertical: 2,
-    fontFamily: "serif",
+    fontWeight: '600',
+    // marginVertical: 2,
+    // fontFamily: "serif",
+    // letterSpacing:1,
+    lineHeight: 22
 
   },
   // address section
