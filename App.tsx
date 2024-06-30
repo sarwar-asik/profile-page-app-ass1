@@ -28,7 +28,11 @@ function AvatarSection() {
 }
 
 function StatisticsSection() {
-  const data = [
+  type ItemType = {
+    typeName: string,
+    value: number
+  }
+  const data: ItemType[] = [
     { typeName: "Repos", value: 8 },
     { typeName: "Followers", value: 3939 },
     { typeName: "Following", value: 9 },
@@ -37,7 +41,7 @@ function StatisticsSection() {
     <View style={{ backgroundColor: "#ebf0ef", paddingHorizontal: 24, paddingVertical: 15, borderRadius: 10, marginVertical: 10, flexDirection: "row", justifyContent: "space-between" }}>
 
       {
-        data?.map((item, index) => {
+        data?.map((item: ItemType, index: number) => {
           return <View key={index + 1} style={{
             alignItems: "center",
             flexDirection: "column"
@@ -102,18 +106,6 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     gap: 18,
   },
-  // avatarSection: {
-  //   backgroundColor: "white",
-  //   display: "flex",
-  //   alignItems: "center",
-  //   gap: 5,
-  //   justifyContent: "space-between",
-  // }
-  // ,
-  // avatar: {
-  //   // width: 100,
-  //   // height: 100
-  // },
   avatarSection: {
     backgroundColor: 'white',
     alignItems: 'center',
